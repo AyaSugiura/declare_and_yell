@@ -1,0 +1,42 @@
+
+<div class="signup">
+  <div class="signup-container">
+    <h1>新規登録</h1>
+    <p>登録するとできること</p>
+    <ul>
+      <li><span class="fa fa-pencil"></span> やることを宣言！</li>
+      <li><span class="fa fa-pencil"></span> 他のユーザーの宣言を応援</li>
+      <li><span class="fa fa-pencil"></span> 達成報告</li>
+    </ul>
+  </div>
+  <div class="signup-form">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="enter-forms">
+        <%= form_for(@user) do |f| %>
+          <div class="form-group">
+            <%= f.label :name, 'Name' %>
+            <%= f.text_field :name, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :email, 'Email' %>
+            <%= f.email_field :email, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :password, 'Password' %>
+            <%= f.password_field :password, class: 'form-control' %>
+          </div>
+          <div class="form-group">
+            <%= f.label :password_confirmation, 'Password(確認)' %>
+            <%= f.password_field :password_confirmation, class: 'form-control' %>
+          </div>
+          </div>
+          <div class="submit-button">
+          <%= f.submit 'Sign up', class: 'btn btn-info btn-block' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -18,20 +18,27 @@
   position: fixed;
   top: 0;
   left:0;
+  z-index: 10;
   width: 100%;
   background-color: #b9b7fb;
   color: #fff;
   border-bottom: none;
   opacity: 0.9;
+  /* z-indexを10に指定してください */
 }
 
 .navbar-brand{
   color: #fff;
 }
 
+.alert{
+  margin-top: 50px;
+}
+
+
 .toppage{
   background-size: cover;
-  margin-top: 50px;
+  margin-top: 30px;
   background: linear-gradient(-45deg, #00C9FF, #92FE9D) ;
 }
 .main-message{
