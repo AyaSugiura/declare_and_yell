@@ -1,2 +1,20 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+
+<div class="user-show">
+  <div class="user-information">
+    <div class="name"><%= @user.name %></div>
+    <div class="image">
+      <% if @user.image %>
+      <% else %>
+        <span class="fa fa-user"></span>
+      <% end %>
+    </div>
+    <div class="message">
+      <% if @user.message %>
+        <p><%= @user.message %></p>
+      <% end %>
+    </div>
+  </div>
+  <div class="declares">
+    ここに宣言が入る
+  </div>
+</div>
