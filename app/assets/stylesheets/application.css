@@ -13,3 +13,148 @@
  *= require_tree .
  *= require_self
  */
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  background-color: #b9b7fb;
+  color: #fff;
+  border-bottom: none;
+  opacity: 0.9;
+}
+
+.navbar-brand{
+  color: #fff;
+}
+
+.toppage{
+  background-size: cover;
+  margin-top: 50px;
+  background: linear-gradient(-45deg, #00C9FF, #92FE9D) ;
+}
+.main-message{
+  text-align: center;
+  color: #ffffff;
+  
+}
+
+.main-message p{
+  padding-top:20px;
+}
+
+.main-message h1{
+  padding-bottom: 10px;
+  display: block;
+  font-weight: bold;
+  
+}
+
+.categories{
+  padding-bottom: 10px;
+}
+
+.category{
+  text-align: center;
+  border: solid 3px white;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.category p{
+  color: #00C9FF;
+  font-size: 15px
+}
+
+.category img{
+  width: 70%;
+}
+
+.category ul{
+  padding: 10px;
+  padding-top: 20px;
+  list-style: none;
+  color: pink;
+}
+
+@media(min-width: 768px){
+  .categories{
+    width: 100%;
+    display: flex;
+  }
+  
+  .category{
+    justify-content: space-between;
+  }
+}
+
+.sub-message{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.sub-message img{
+  transform: scale(-1, -1);
+  width: 20px;
+  padding-top: 10px;
+}
+
+.sub-message .text{
+  padding: 5px;
+  border: solid 1px #FF33CC;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color:#FF33CC;
+  color:white;
+  width: 11em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bottom-message{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.bottom-message p{
+  padding-top: 10px;
+  color: white;
+}
+
+.bottom-message a{
+  display: inline-block;
+  border-radius: 4px;
+  padding:10px 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  background-color: white;
+  opacity: 0.6;
+}
+
+.bottom-message a:hover{
+  opacity:1;
+  text-decoration: none;
+}
+
+footer{
+  height: 100px;
+  text-align: center;
+}
+
+footer a{
+   display: inline-block;
+   color: black;
+   opacity: 0.5;
+   padding-top: 45px;
+   font-size: small;
+}
+
+footer a:hover{
+  text-decoration: none;
+  color: black;
+  opacity: 0.5;
+}
