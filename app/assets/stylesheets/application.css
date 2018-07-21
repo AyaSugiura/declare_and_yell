@@ -39,7 +39,7 @@
 .toppage{
   background-size: cover;
   margin-top: 30px;
-  background: linear-gradient(-45deg, #00C9FF, #92FE9D) ;
+  background: linear-gradient(45deg, #EAECC6, #2BC0E4 ) ;
 }
 .main-message{
   text-align: center;
