@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hoi6fsnfm
+  api_key: '771487486682781'
+  api_secret: z90xYEIcMLpQknvBwPbNeHmRKG0
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: hoi6fsnfm
+  api_key: '771487486682781'
+  api_secret: z90xYEIcMLpQknvBwPbNeHmRKG0
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: hoi6fsnfm
+  api_key: '771487486682781'
+  api_secret: z90xYEIcMLpQknvBwPbNeHmRKG0
+  enhance_image_tag: true
+  static_image_support: false

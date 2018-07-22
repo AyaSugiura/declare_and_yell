@@ -3,9 +3,10 @@
   <div class="user-information">
     <div class="name"><%= @user.name %></div>
     <div class="image">
-      <% if @user.image %>
+      <% if @user.image.present? %>
+        <%= image_tag @user.image.thumbnail.url %>
       <% else %>
-        <span class="fa fa-user"></span>
+        <img src="image/syumi.png" alt="初期画像">
       <% end %>
     </div>
     <div class="message">

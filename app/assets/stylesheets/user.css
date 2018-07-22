@@ -17,10 +17,8 @@
   
 }
 
-.user-information .image span{
-  font-size: 48px;
-  width: 48px;
-  border: 1px solid white;
+.user-information .image img{
+  width: 50px;
 }
 
 .user-information .message{

@@ -52,3 +52,29 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "kaminari"
+
+
+gem 'carrierwave'
+gem 'rmagick'
+
+source 'https://rubygems.org'
+
+
+
+gem 'carrierwave'
+gem 'cloudinary'
+
+gem 'heroku'
+
+group :test, :development do
+    gem 'sqlite3'
+end
+
+
+
+
+gem 'jquery-rails'
+
+group :production do
+  gem 'pg', '0.21.0'
+end

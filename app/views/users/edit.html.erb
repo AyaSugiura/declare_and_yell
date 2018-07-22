@@ -1,2 +1,22 @@
-<h1>Users#edit</h1>
-<p>Find me in app/views/users/create.html.erb</p>
+<div class="user-edit">
+  <h1>プロフィール編集</h1>
+  <div class="forms">
+    <%= form_for(@user) do |f| %>
+    <div class="form">
+      <%= f.label :name, 'Name' %>
+      <%= f.text_field :name, class: 'form-control' %>
+    </div>
+    <div class="form">
+      <%= f.label :message, 'プロフィール' %>
+      <%= f.text_area :message, class: 'form-control' %>
+    </div>
+    <div class="form">
+      <%= f.label :image, 'トップ画像' %>
+      <%= f.file_field :image %>
+    </div>
+    <div class="submit-button">
+    　<%= f.submit '保存', class: 'btn btn-info btn-block' %>
+    </div>
+    <% end %>
+  </div>
+</div>
