@@ -43,17 +43,17 @@
 
 .toppage{
   background-size: cover;
-  margin-top: 30px;
+  padding-top: 30px;
   background: linear-gradient(45deg, #EAECC6, #2BC0E4 ) ;
 }
 .main-message{
   text-align: center;
   color: #ffffff;
-  
+  padding-top: 30px;
 }
 
 .main-message p{
-  padding-top:20px;
+  padding-top:15px;
 }
 
 .main-message h1{

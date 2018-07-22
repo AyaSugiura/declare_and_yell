@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   before_action :require_user_logged_in, only: [:index, :edit, :update]
   
   def index
+    @users = User.all.order(created_at: :desc)
   end
 
   def show
