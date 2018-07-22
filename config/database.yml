@@ -47,11 +47,7 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: declare_and_yell_production
-  username: declare_and_yell
-  password: <%= ENV['DECLARE_AND_YELL_DATABASE_PASSWORD'] %>
+
 
 production:
   adapter: postgresql
@@ -59,4 +55,4 @@ production:
   pool: 5
   database: declare_and_yell_production
   username: declare_and_yell
-  password: <%= ENV['MESSAGE-BOARD_DATABASE_PASSWORD'] %>
+  password: <%= ENV['DECLARE_AND_YELL_DATABASE_PASSWORD'] %>
