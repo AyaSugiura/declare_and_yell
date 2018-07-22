@@ -52,3 +52,11 @@ production:
   database: declare_and_yell_production
   username: declare_and_yell
   password: <%= ENV['DECLARE_AND_YELL_DATABASE_PASSWORD'] %>
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database: declare_and_yell_production
+  username: declare_and_yell
+  password: <%= ENV['MESSAGE-BOARD_DATABASE_PASSWORD'] %>
